@@ -18,7 +18,10 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<style type="text/css">
+    
 
+</style>
 <body>
 <div class="main-wrapper">
     <div class="preloader">
@@ -27,14 +30,29 @@
             <div class="lds-pos"></div>
         </div>
     </div>
-    <div class="auth-wrapper d-flex no-block justify-content-center align-items-center bg-dark">
-        <div class="auth-box bg-dark border-top border-secondary">
-            <div id="loginform">
-                <div class="text-center p-t-20 p-b-20">
-                    <span class="db"><img src="{{asset('admin-panel/assets/images/logo.png')}}" alt="logo" /></span>
+
+
+    <!--form-->
+   <section>
+       <div class="container-fluid pb-5" style="height:650px; background:#F6F6F6;">
+       
+           <div class="box" >
+               <div class="row">
+
+                   <div class="col-md-7 pt-5">
+                    <h3 class="text-center"> Let's Manage Together, Grow Together</h3>
+                       <img src="admin-panel/assets/images/containerimg.jpg" class="img-fluid">
+                   </div>
+                   <div class="col-md-4 bg-light mt-5 ">
+
+                            <div class="text-center p-t-20 p-b-20">
+                    <span class="db"><img src="{{asset('admin-panel/assets/images/logo.png')}}" alt="logo" style="width: 160px;" /></span>
+                    <h3>Welcome To HRMS</h3>
+                    <img src="{{asset('admin-panel/assets/images/avtar.jpg')}}" class="img-fluid w-25 rounded-circle">
                 </div>
-                <!-- Form -->
-                {{--<form class="form-horizontal m-t-20" id="loginform" action="index.html">--}}
+
+<!-- Form -->
+                 {{--<form class="form-horizontal m-t-20" id="loginform" action="index.html">--}}
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                     <div class="row p-b-30">
@@ -68,39 +86,22 @@
                             <div class="form-group">
                                 <div class="p-t-20">
                                     <button class="btn btn-info" id="to-recover" type="button"><i class="fa fa-lock m-r-5"></i> Lost password?</button>
+                                     <a href="http://127.0.0.1:8000/register"><button class="btn btn-primary" id="to-recover" type="button"><i class="fa fa-lock-open m-r-5"></i>Sign Up</button></a>
                                     <button class="btn btn-success float-right" type="submit">Login</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div id="recoverform">
-                <div class="text-center">
-                    <span class="text-white">Enter your e-mail address below and we will send you instructions how to recover a password.</span>
-                </div>
-                <div class="row m-t-20">
-                    <!-- Form -->
-                    <form class="col-12" action="index.html">
-                        <!-- email -->
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text bg-danger text-white" id="basic-addon1"><i class="ti-email"></i></span>
-                            </div>
-                            <input type="text" class="form-control form-control-lg" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-                        <!-- pwd -->
-                        <div class="row m-t-20 p-t-20 border-top border-secondary">
-                            <div class="col-12">
-                                <a class="btn btn-success" href="#" id="to-login" name="action">Back To Login</a>
-                                <button class="btn btn-info float-right" type="button" name="action">Recover</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+               </form> 
+       </form>
+   </div>
+</div>
+</div>
+       </div>
+   </section>
+   <!--form end-->
+
+
 </div>
 <script src="{{asset('admin-panel/assets/libs/jquery/dist/jquery.min.js')}}"></script>
 <!-- Bootstrap tether Core JavaScript -->

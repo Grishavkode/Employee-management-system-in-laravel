@@ -55,7 +55,7 @@ class LeaveController extends Controller
             'days'          => $request->days,
             'reason'        => $request->reason,
         ]);
-
+        
         Toastr::success('Leave successfully requested to HR!','Success');
 
         return redirect()->route('leave');

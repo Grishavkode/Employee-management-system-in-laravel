@@ -26,7 +26,7 @@
                 <!-- Column -->
                 <div class="col-md-6 col-lg-4 col-xlg-3">
                     <div class="card card-hover">
-                        <div class="box bg-success text-center">
+                        <div class="box bg-cyan text-center">
                             <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
                             <h5 class="m-b-0 m-t-5 text-white">{{ $users->total() }}</h5>
                             <h6 class="text-white">Total employees</h6>
@@ -38,28 +38,28 @@
                     <div class="card card-hover">
                         <div class="box bg-warning text-center">
                             <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
-                            <h5 class="m-b-0 m-t-5 text-white">25</h5>
-                            <h6 class="text-white">Total leaves</h6>
+                            <h5 class="m-b-0 m-t-5 text-white">0</h5>
+                            <h6 class="text-white">Total Point Earn</h6>
                         </div>
                     </div>
                 </div>
                 <!-- Column -->
                 <div class="col-md-6 col-lg-2 col-xlg-3">
                     <div class="card card-hover">
-                        <div class="box bg-danger text-center">
+                        <div class="box bg-success text-center">
                             <h1 class="font-light text-white"><i class="mdi mdi-border-outside"></i></h1>
                             <h5 class="m-b-0 m-t-5 text-white">2</h5>
-                            <h6 class="text-white">On leave</h6>
+                            <h6 class="text-white">Total Join</h6>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-2 col-xlg-3">
                     <div class="card card-hover">
-                        <div class="box bg-cyan text-center">
+                        <div class="box bg-danger text-center">
                             <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
                             <h5 class="m-b-0 m-t-5 text-white">6</h5>
-                            <h6 class="text-white">Designation</h6>
+                            <h6 class="text-white">Rejected</h6>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
         </div>
 
         <footer class="footer text-center">
-            All Rights Reserved by Khoz Informatics Pvt. Ltd. Designed and Developed by <a href="https://khozinfo.com/">Khozinfo</a>.
+            <!-- All Rights Reserved by Khoz Informatics Pvt. Ltd. Designed and Developed by <a href="https://khozinfo.com/">Khozinfo</a>. -->
         </footer>
 
     </div>

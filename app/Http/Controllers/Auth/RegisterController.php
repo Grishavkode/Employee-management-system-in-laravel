@@ -6,7 +6,9 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Redirect;
 
 class RegisterController extends Controller
 {
@@ -51,7 +53,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'username' => ['required', 'string', 'max:255'],
             'first_name' => ['required'],
-            'last_name' => ['required'],
+            // 'last_name' => ['required'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required'],
             'phone' => ['required'],
@@ -64,7 +66,6 @@ class RegisterController extends Controller
             'age' => ['required'],
         ]);
     }
-
     /**
      * Create a new user instance after a valid registration.
      *
@@ -74,7 +75,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 //        dd($data);
-        return User::create([
+        User::create([
             'username' => $data['username'],
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
@@ -91,5 +92,10 @@ class RegisterController extends Controller
             'city' => $data['city'],
             'age' => $data['age'],
         ]);
+        
+  Toastr::success('User Registerd  successfully requested to HRMS!','Success');
+
+       return Redirect::back();
+
     }
 }
